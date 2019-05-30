@@ -54,6 +54,8 @@ export function create(req, res) {
   });
 }
 
+// add more methods here: one, update, remove, etc.
+
 /**
  * Validates a request object to ensure the expected properties are present and valid
  *

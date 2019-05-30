@@ -1,12 +1,14 @@
 import mongoose from 'mongoose';
 import bcrypt from 'bcrypt-nodejs';
+const userRoles = ['user', 'manager', 'admin'];
 
 const userSchema = new mongoose.Schema(
   {
     first_name: String,
     last_name: String,
     email: { type: String, index: { unique: true } },
-    password: String
+    password: String,
+    role: { type: String, enum: userRoles, default: 'user' }
   },
   { toObject: { virtuals: true }, toJSON: { virtuals: true } }
 );
