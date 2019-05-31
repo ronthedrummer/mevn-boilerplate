@@ -7,3 +7,4 @@ Simple boilerplate for MERN applications
 3. Run `npm install` to install all the dependencies.
 4. Install global dependencies `npm i -g vue-cli vue-devtools mongodb babel nodemon concurrently`
 5. Start Mongo in a new terminal window `mongod`
+6. Run the task to rule them all `npm run dev`
