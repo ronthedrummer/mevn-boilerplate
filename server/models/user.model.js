@@ -8,7 +8,7 @@ const userSchema = new mongoose.Schema(
     last_name: String,
     email: { type: String, index: { unique: true } },
     password: String,
-    role: { type: String, enum: userRoles, default: 'user' }
+    role: { type: String, enum: userRoles, default: 'admin' }
   },
   { toObject: { virtuals: true }, toJSON: { virtuals: true } }
 );
