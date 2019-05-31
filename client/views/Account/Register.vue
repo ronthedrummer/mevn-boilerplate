@@ -46,6 +46,13 @@
           placeholder="******"
         >
       </div>
+      <div class="form-group col-sm-12 col-md-8 offset-md-2 col-xl-4 offset-xl-4">
+        <label for="role">Role: &nbsp;</label>
+        <select v-model="role" id="role" name="role" class="form-control">
+          <option value="admin">Admin</option>
+          <option value="user" selected>User</option>
+        </select>
+      </div>
       <div class="frorm-group col-sm-12 col-md-8 offset-md-2 col-xl-4 offset-xl-4 mt-4">
         <button type="submit" class="btn btn-primary col-12">Add User</button>
       </div>
@@ -55,6 +62,7 @@
       <div>{{ id }}</div>
       <div>Name: {{ full_name }}</div>
       <div>Email: {{ email }}</div>
+      <div>Role: {{ role }}</div>
       <div>Password: ****</div>
     </div>
   </div>
@@ -73,6 +81,7 @@ export default {
       last_name: '',
       email: '',
       password: '',
+      role: 'user',
       created: false
     };
   },
@@ -84,7 +93,8 @@ export default {
           first_name: this.first_name,
           last_name: this.last_name,
           email: this.email,
-          password: this.password
+          password: this.password,
+          role: 'user'
         })
         .then(res => {
           console.log(res);
@@ -93,6 +103,7 @@ export default {
           this.first_name = user.first_name;
           this.last_name = user.last_name;
           this.full_name = `${user.first_name} ${user.last_name}`;
+          this.role = user.role;
           this.created = true;
         });
     }
