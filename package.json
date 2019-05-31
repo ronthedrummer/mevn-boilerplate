@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "simple MEVN stack boilerplate",
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve": "vue-cli-service serve --open ./client/main.js",
     "build": "vue-cli-service build",
     "dev-build": "babel server --out-dir dist --watch",
     "dev-express": "nodemon ./dist/index.js",

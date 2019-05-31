@@ -7,7 +7,7 @@
 
 <script>
 // @ is an alias to /client
-import HelloWorld from '@/views/components/HelloWorld.vue';
+import HelloWorld from './components/HelloWorld.vue';
 
 export default {
   name: 'home',

@@ -1,8 +1,8 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import Home from './views/Home.vue';
-import * as auth from './services/AuthService';
-import adminRoutes from './routes/admin.routes.js';
+import * as auth from './services/auth.service';
+import adminRoutes from './routes/admin.routes';
 
 Vue.use(Router);
 
