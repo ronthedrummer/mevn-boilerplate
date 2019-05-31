@@ -7,7 +7,7 @@
       <li class="nav-item">
         <router-link to="/about" class="nav-link">About</router-link>
       </li>
-      <li class="nav-item dropdown" v-if="isAdmin">
+      <li class="nav-item dropdown" v-if="isLoggedIn">
         <a
           href="#"
           class="nav-link dropdown-toggle"

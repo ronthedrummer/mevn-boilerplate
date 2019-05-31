@@ -1,3 +1,5 @@
+import * as auth from '../services/auth.service';
+
 export default [
   {
     path: '/admin/users/create',

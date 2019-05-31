@@ -34,6 +34,11 @@ export default new Router({
         next('/login');
       }
     },
+    {
+      path: '/register',
+      name: 'register',
+      component: () => import('./views/Account/Register.vue')
+    },
     // use the array of routes made in a separate file, keeps this file cleaner (ES6 spread opperator)
     ...adminRoutes
   ]
