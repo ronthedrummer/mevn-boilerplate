@@ -8,8 +8,9 @@ module.exports = {
   outputDir: path.resolve(__dirname, './dist/client'),
   filenameHashing: false,
   chainWebpack: config => {
-    config.resolve.alias.set('Utils', path.resolve(__dirname, './src/utils'));
-    config.resolve.alias.set('~', path.resolve(__dirname, './src/scss'));
+    config.resolve.alias.set('Utils', path.resolve(__dirname, './client/utils'));
+    config.resolve.alias.set('~', path.resolve(__dirname, './node_modules'));
+    config.resolve.alias.set('Styles', path.resolve(__dirname, './client/scss'));
   },
   css: {
     sourceMap: true

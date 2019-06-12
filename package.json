@@ -8,7 +8,7 @@
     "build-server": "babel server -d dist/server ",
     "build": "npm run build-server && npm run build-client",
     "dev-build": "babel server --out-dir dist/server --watch",
-    "dev-express": "nodemon ./dist/index.js",
+    "dev-express": "nodemon ./dist/server/index.js",
     "start": "concurrently \"npm:dev-build\" \"npm:dev-express\" \"npm:serve\"",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit"
