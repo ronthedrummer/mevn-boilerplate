@@ -4,8 +4,10 @@
   "description": "simple MEVN stack boilerplate",
   "scripts": {
     "serve": "vue-cli-service serve --open ./client/main.js",
-    "build": "vue-cli-service build",
-    "dev-build": "babel server --out-dir dist --watch",
+    "build-client": "vue-cli-service build",
+    "build-server": "babel server -d dist/server ",
+    "build": "npm run build-server && npm run build-client",
+    "dev-build": "babel server --out-dir dist/server --watch",
     "dev-express": "nodemon ./dist/index.js",
     "start": "concurrently \"npm:dev-build\" \"npm:dev-express\" \"npm:serve\"",
     "lint": "vue-cli-service lint",
