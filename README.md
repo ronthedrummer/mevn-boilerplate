@@ -18,7 +18,7 @@ Simple boilerplate for MEVN applications
 
 ## Adding a global Sass file
 
-There's already an alias in the `vue.config.js` file that allows you to point to files in the `/scss/` directory using `Styles`. I've also included a Sass file for you to add stuff to. It will be bundled during the webpack build and be included in your site-wide `app.css` file. I've also included Bootstrap's 'bootstrap-reboot.scss' file from the node_module using the node module alias `~`.
+There's already an alias in the `vue.config.js` file that allows you to point to files in the `/scss/` directory using `$styles`. I've also included a Sass file for you to add stuff to. It will be bundled during the webpack build and be included in your site-wide `app.css` file. I've also included Bootstrap's 'bootstrap-reboot.scss' file from the node_module using the node module alias `~`.
 
 ## Production Build
 

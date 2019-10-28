@@ -1,7 +1,7 @@
 module.exports = api => {
   api.cache(true);
 
-  const presets = ['@vue/app'];
+  const presets = ['@babel/preset-env'];
 
   return {
     presets
