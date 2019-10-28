@@ -30,43 +30,43 @@
         <router-link to="/login" class="nav-link">Login</router-link>
       </li>
     </ul>
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
 <script>
-import * as auth from './services/auth.service';
-import { http } from './services/http.service';
+import * as auth from './services/auth.service'
+import { http } from './services/http.service'
 
 export default {
   name: 'App',
   methods: {
     logout() {
-      auth.logout();
+      auth.logout()
       this.$router.push({
         name: 'login'
-      });
+      })
     }
   },
   computed: {
     isLoggedIn() {
-      return this.$store.getters.isLoggedIn;
+      return this.$store.getters.isLoggedIn
     },
     isAdmin() {
-      return this.$store.getters.isAdmin;
+      return this.$store.getters.isAdmin
     },
     user() {
-      return this.$store.getters.user;
+      return this.$store.getters.user
     }
   },
   beforeCreate() {
-    this.$store.dispatch('authenticate');
+    this.$store.dispatch('authenticate')
   }
-};
+}
 </script>
 
 <style lang="scss">
-@import 'Styles/app.scss';
+@import '$styles/app.scss';
 
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
