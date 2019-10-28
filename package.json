@@ -1,7 +1,7 @@
 {
-  "name": "city-loop",
-  "version": "0.1.0",
-  "description": "simple newsfeed service for local government",
+  "name": "mevn-boilerplate",
+  "version": "1.0.0",
+  "description": "simple MEVN stack boilerplate",
   "scripts": {
     "serve": "vue-cli-service serve --open ./client/main.js",
     "build-client": "vue-cli-service build",
@@ -46,7 +46,14 @@
     "sass-loader": "^7.1.0",
     "vue-template-compiler": "^2.5.21"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UncleRemus/mevn-boilerplate.git"
+  },
   "author": "Ron McCranie <@UncleRemus>",
-  "license": "UNLICENSED",
-  "private": true
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UncleRemus/mevn-boilerplate/issues"
+  },
+  "homepage": "https://github.com/UncleRemus/mevn-boilerplate#readme"
 }
