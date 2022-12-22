@@ -20,7 +20,7 @@
     "bootstrap-vue": "^2.0.0-rc.21",
     "core-js": "^2.6.5",
     "esdoc-standard-plugin": "^1.0.0",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "moment": "^2.24.0",
     "mongoose": "^5.5.11",
     "vue": "^2.6.10",
